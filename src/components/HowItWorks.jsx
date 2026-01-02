@@ -11,7 +11,6 @@ import four from "../assets/4.png";
 import threeCombo from "../assets/threCombo.png";
 import { HiArrowRight } from "react-icons/hi";
 import ball from "../assets/Ball.png";
-import arrowthree from "../assets/arrowthree.jpeg";
 
 function HowItWorks() {
   return (

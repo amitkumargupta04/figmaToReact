@@ -5,12 +5,11 @@ import line1 from "../assets/line1.png";
 import groups from "../assets/groups.png";
 import salesforce from "../assets/Salesforce.png";
 import vectorp from "../assets/VectorP.png";
-import frame from "../assets/Frame.png";
-import halfchrome from "../assets/halfChrome.png";
 import { Star } from "lucide-react";
 import chrome1 from "../assets/chrome1.png";
 import playstore from "../assets/playstore.png";
 import playstore1 from "../assets/playstore1.png";
+
 function Hero() {
   return (
     <section
