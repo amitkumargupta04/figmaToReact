@@ -32,7 +32,7 @@ function ContinuesScroll() {
 
   return (
     <div className="overflow-hidden w-full py-10">
-      <div className="shadow-md bg-white p-4 rounded-xl">
+      <div className="shadow-sm bg-white p-4">
         <motion.div
           animate={controls}
           whileHover={{ pause: true }} // pause on hover

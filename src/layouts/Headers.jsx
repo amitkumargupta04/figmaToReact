@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import { HiArrowRight, HiMenu, HiX } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi";
 import { FaArrowRightToBracket } from "react-icons/fa6";
-import { HiChevronDown } from "react-icons/hi";
 import { IoChevronDown } from "react-icons/io5";
 
 function Headers() {
@@ -10,69 +9,85 @@ function Headers() {
 
   return (
     <header className="w-full bg-white shadow-md">
-      <div className="max-w-7xl mx-auto py-4 px-3">
+      <div className="max-w-7xl mx-auto px-4 py-2">
+        {/* HEADER ROW */}
         <div className="flex items-center justify-between h-16">
-          {/* Left: Logo */}
-          <img src={logo} alt="Logo" className="" />
+          {/* LOGO */}
+          <img src={logo} alt="Logo" className="h-16" />
 
-          {/* Center: Navigation (Desktop) */}
-          <nav className="hidden md:flex items-center space-x-6">
-            {/* Product Dropdown */}
+          {/* DESKTOP NAV */}
+          <nav className="hidden md:flex items-center gap-8">
+            {/* PRODUCT */}
             <div className="relative group">
-              <span className="flex items-center gap-1 cursor-pointer font-medium text-[#222222] leading-none">
-                Product
-                <IoChevronDown className="text-lg mt-[1px]" />
-              </span>
-              <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
-                <p className="px-4 py-2 hover:bg-gray-100">Overview</p>
-                <p className="px-4 py-2 hover:bg-gray-100">Features</p>
-                <p className="px-4 py-2 hover:bg-gray-100">Integrations</p>
+              <div className="flex items-center gap-1 font-semibold cursor-pointer">
+                Product <IoChevronDown />
+              </div>
+              <div className="absolute left-0 top-full bg-white shadow-lg rounded-md w-44 hidden group-hover:block">
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Overview
+                </p>
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Features
+                </p>
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Integrations
+                </p>
               </div>
             </div>
 
-            {/* Pricing */}
-            <span className="cursor-pointer font-medium text-[#222222]">
-              Pricing
-            </span>
+            {/* PRICING */}
+            <span className="font-semibold cursor-pointer">Pricing</span>
 
-            {/* Resources Dropdown */}
+            {/* RESOURCES */}
             <div className="relative group">
-              <span className="flex items-center gap-1 cursor-pointer font-medium text-[#222222] leading-none">
-                Resources
-                <IoChevronDown className="text-lg mt-[1px]" />
-              </span>
-              <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
-                <p className="px-4 py-2 hover:bg-gray-100">Blog</p>
-                <p className="px-4 py-2 hover:bg-gray-100">Docs</p>
-                <p className="px-4 py-2 hover:bg-gray-100">Guides</p>
+              <div className="flex items-center gap-1 font-semibold cursor-pointer">
+                Resources <IoChevronDown />
+              </div>
+              <div className="absolute left-0 top-full bg-white shadow-lg rounded-md w-44 hidden group-hover:block">
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Blog
+                </p>
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Docs
+                </p>
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Guides
+                </p>
               </div>
             </div>
 
-            {/* Company Dropdown */}
+            {/* COMPANY */}
             <div className="relative group">
-              <span className="flex items-center gap-1 cursor-pointer font-medium text-[#222222] leading-none">
-                Company
-                <IoChevronDown className="text-lg mt-[1px]" />
-              </span>
-              <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
-                <p className="px-4 py-2 hover:bg-gray-100">About</p>
-                <p className="px-4 py-2 hover:bg-gray-100">Careers</p>
-                <p className="px-4 py-2 hover:bg-gray-100">Contact</p>
+              <div className="flex items-center gap-1 font-semibold cursor-pointer">
+                Company <IoChevronDown />
+              </div>
+              <div className="absolute left-0 top-full bg-white shadow-lg rounded-md w-44 hidden group-hover:block">
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  About
+                </p>
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Careers
+                </p>
+                <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                  Contact
+                </p>
               </div>
             </div>
           </nav>
 
-          {/* Right Buttons (Desktop) */}
-          <div className="hidden md:flex items-center gap-3">
-            <button className="bg-[#2D96BC] text-white px-5 py-3 rounded-md">
+          {/* DESKTOP BUTTONS */}
+          <div className="hidden md:flex gap-3">
+            <button className="bg-[#2D96BC] text-white px-5 py-2 rounded-md">
               Get Your Free Account
             </button>
-            <button className="flex items-center gap-1 px-3 py-2 font-medium text-[#2D96BC] border border-[#2D96BC] rounded-md">
-              <FaArrowRightToBracket /> Login
+
+            <button className="flex items-center gap-2 border border-[#2D96BC] text-[#2D96BC] px-4 py-2 rounded-md">
+              <FaArrowRightToBracket />
+              Login
             </button>
           </div>
 
-          {/* Hamburger (Mobile) */}
+          {/* MOBILE MENU ICON */}
           <button
             className="md:hidden text-2xl"
             onClick={() => setOpenMenu(!openMenu)}
@@ -81,20 +96,21 @@ function Headers() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* MOBILE MENU */}
         {openMenu && (
-          <div className="md:hidden mt-4 bg-white shadow-md rounded-md p-4 space-y-3">
-            <p>Product</p>
-            <p>Pricing</p>
-            <p>Resources</p>
-            <p>Company</p>
+          <div className="md:hidden mt-3 bg-white shadow-md rounded-md p-4 space-y-3">
+            <p className="font-medium">Product</p>
+            <p className="font-medium">Pricing</p>
+            <p className="font-medium">Resources</p>
+            <p className="font-medium">Company</p>
 
             <button className="w-full bg-[#2D96BC] text-white py-2 rounded-md">
               Get Your Free Account
             </button>
 
-            <button className="w-full flex justify-center items-center gap-1 py-2 border border-[#2D96BC] text-[#2D96BC] rounded-md">
-              Login <HiArrowRight />
+            <button className="w-full flex justify-center items-center gap-2 py-2 border border-[#2D96BC] text-[#2D96BC] rounded-md">
+              <FaArrowRightToBracket />
+              Login
             </button>
           </div>
         )}

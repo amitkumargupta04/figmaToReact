@@ -9,7 +9,8 @@ import frame from "../assets/Frame.png";
 import halfchrome from "../assets/halfChrome.png";
 import { Star } from "lucide-react";
 import chrome1 from "../assets/chrome1.png";
-
+import playstore from "../assets/playstore.png";
+import playstore1 from "../assets/playstore1.png";
 function Hero() {
   return (
     <section
@@ -78,10 +79,12 @@ function Hero() {
         </div>
 
         {/* 5️⃣ Ratings row */}
-        <div className="mb-4 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
+        <div className="mb-4 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 mt-4">
           {/* Block 1 */}
-          <div className="flex items-center gap-4">
-            <img src={halfchrome} alt="Chrome Icon" className="h-10 w-10" />
+          <div className="flex items-center gap-2">
+            <div className="bg-white w-10 h-10 rounded-sm flex items-center justify-center">
+              <img src={playstore1} alt="Frame Icon"  />
+            </div>
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={16} fill="#FACC15" stroke="none" />
@@ -91,8 +94,10 @@ function Hero() {
           </div>
 
           {/* Block 2 */}
-          <div className="flex items-center">
-            <img src={frame} alt="Frame Icon"  />
+          <div className="flex items-center gap-2">
+            <div className="bg-white w-10 h-10 rounded-sm flex items-center justify-center">
+              <img src={playstore} alt="Frame Icon"  />
+            </div>
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={16} fill="#FACC15" stroke="none" />
@@ -103,7 +108,7 @@ function Hero() {
         </div>
 
         {/* 6️⃣ CTA Cards */}
-        <div className="flex flex-col sm:flex-row items-stretch justify-center gap-3 w-full">
+        <div className="flex flex-col sm:flex-row items-stretch justify-center gap-3 w-full py-6">
           
           {/* Left Card */}
           <div

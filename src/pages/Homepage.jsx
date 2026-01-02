@@ -16,9 +16,9 @@ function Homepage() {
      <Prospectors/>
      <HowItWorks/>
      <PeopleSaying/>
-     <ThoushandsUsing/>
-     <OurSupport/>
      <LinkedInSales/>
+     <OurSupport/>
+     <ThoushandsUsing/>
     </>
   )
 }

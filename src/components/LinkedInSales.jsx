@@ -88,9 +88,9 @@ function LinkedInSales() {
           </span>
         </p>
 
-        <div className="mt-6 flex flex-col md:flex-row gap-2">
+        <div className="mt-6 flex flex-col md:flex-row gap-2 md:items-stretch">
           {/* ye Div1*/}
-          <div className="bg-[#F0F4FD] rounded-2xl p-6 flex flex-col justify-between">
+          <div className="bg-[#F0F4FD] rounded-2xl p-6 flex flex-col justify-between md:flex-1 h-full">
             <div>
               <p className="font-medium text-[#090F4E]">
                 Here is how LeadCRM tackles that situation.
@@ -100,7 +100,7 @@ function LinkedInSales() {
               </p>
             </div>
 
-            {/* 🔥 IMAGES ALWAYS TOGETHER — keep side-by-side on all sizes */}
+            {/*  IMAGES ALWAYS TOGETHER — keep side-by-side on all sizes */}
             <div className="flex gap-4 mt-6 flex-row items-start">
               <img
                 src={sales1}
@@ -116,7 +116,7 @@ function LinkedInSales() {
           </div>
 
           {/* ye Div2*/}
-          <div className="flex items-center justify-center overflow-hidden">
+          <div className="flex items-center justify-center overflow-hidden md:flex-1">
             <img
               src={sales3}
               alt="sales3"

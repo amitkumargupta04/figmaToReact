@@ -1,35 +1,27 @@
 import React from "react";
 import topRightImg from "../assets/message2.png"; // right-end top image
-import bannerImg from "../assets/thoushands.png";  // banner image
+import bannerImg from "../assets/thoushands.png"; // banner image
 import { FaArrowRightLong } from "react-icons/fa6";
+import { HiArrowRight } from "react-icons/hi";
 
 function ThoushandsUsing() {
   return (
-    <div className="relative">
-      {/* ===== Top right image ===== */}
-      <div className="flex justify-end">
-        <img
-          src={topRightImg}
-          alt="Top Right"
-          className="h-24 w-24 md:h-32 md:w-32 object-contain"
-        />
-      </div>
+    <div className="pb-25 pt-10">
+      <div className="bg-[#EAEFFA]">
+        <div className="px-4 md:px-6 lg:px-10 py-8 ">
+          <p className="text-xl md:text-2xl lg:text-3xl text-[#090F4E] font-bold">
+            Join Thousands of Professionals Using LeadCRM
+          </p>
+          <div>
+            <img src={bannerImg} alt="banner missed" className="mt-6 w-full" />
+          </div>
 
-      {/* ===== Gray banner div ===== */}
-      <div className="bg-gray-200 rounded-xl p-6 shadow-md mt-4 md:mt-6 flex flex-col items-center">
-        {/* Banner image full width */}
-        <img
-          src={bannerImg}
-          alt="Banner"
-          className="w-full rounded-md object-cover"
-        />
-
-        {/* Button centered below image */}
-        <div className="mt-6">
-          <button className="bg-[#9EE25A] text-black px-6 py-3 rounded-xl font-medium flex items-center gap-2 hover:bg-green-500 transition-colors">
-            Get Started Today
-            <FaArrowRightLong className="text-black" />
-          </button>
+          <div className="flex items-center justify-center mt-8">
+            <button className="flex items-center gap-2 bg-[#9EE25A] text-[#171717] px-5 py-3 rounded-md font-semibold">
+              Get Started Today
+              <HiArrowRight />
+            </button>
+          </div>
         </div>
       </div>
     </div>

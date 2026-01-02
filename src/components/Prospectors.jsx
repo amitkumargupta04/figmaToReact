@@ -182,7 +182,7 @@ function Prospectors() {
           <img
             src={prosimg}
             alt="icon"
-            className="h-24 w-24 md:h-32 md:w-32 object-contain"
+            className=" w-36  md:w-40 object-contain"
           />
         </div>
       </div>

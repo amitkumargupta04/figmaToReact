@@ -10,10 +10,13 @@ import three from "../assets/3.png";
 import four from "../assets/4.png";
 import threeCombo from "../assets/threCombo.png";
 import { HiArrowRight } from "react-icons/hi";
+import ball from "../assets/Ball.png";
+import arrowthree from "../assets/arrowthree.jpeg";
 
 function HowItWorks() {
   return (
-    <div className="bg-[#EAEFFA]">
+    <div className="bg-[#EAEFFA] relative">
+      <img src={ball} alt="Ball" className="absolute  right-0 -bottom-14" />
       <div className="py-8 px-4 md:px-6 lg:px-10">
         <h1 className="text-xl md:text-2xl lg:text-3xl text-[#090F4E] font-bold">
           How it Works
@@ -22,9 +25,9 @@ function HowItWorks() {
           From setup to success in{" "}
           <span className="text-gray-500 font-bold">4 simple steps</span>
         </p>
-
+        {/* <img src={arrowthree} alt="Arrow" className="w-full absolute z-0" /> */}
         {/* Cards starts from here parent  */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10 z-20 relative">
           {/* Card 1 */}
           <div className="flex flex-col items-center justify-center bg-white rounded-2xl p-4 gap-4">
             <img src={one} alt="Step 1" />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import frame from "../assets/frame.png";
+import playstore from "../assets/playstore.png"
 
 function PeopleSaying() {
   const testimonials = [
@@ -53,7 +54,7 @@ function PeopleSaying() {
   };
 
   return (
-    <div className="px-4 md:px-10 py-14">
+    <div className="px-4 md:px-10 py-14 mt-14">
       {/* Header + Carousel buttons */}
       <div className="flex items-center justify-between w-full gap-4">
         <h2 className="text-2xl md:text-3xl font-semibold">
@@ -94,13 +95,11 @@ function PeopleSaying() {
               </p>
 
               {/* Stars + frame */}
-              <div className="flex items-start gap-2 mt-4">
-                <img
-                  src={frame}
-                  alt="frame"
-                  className="h-10 w-10 mb-6 rounded-full object-cover"
-                />
-                <div className="flex gap-1">
+              <div className="flex items-start  gap-3 mt-4">
+                <div className="bg-white w-7 h-7 rounded-sm flex items-center justify-center mt-2">
+                  <img src={playstore} alt="Frame Icon" />
+                </div>
+                <div className="flex gap-1 mt-3">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={14} fill="#090F4E" stroke="none" />
                   ))}
