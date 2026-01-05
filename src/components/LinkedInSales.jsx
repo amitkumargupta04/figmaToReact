@@ -4,7 +4,7 @@ import crm from "../assets/settings1.png";
 import sync from "../assets/bulk.png";
 import exportImg from "../assets/brain.png";
 import ai from "../assets/reset.png";
-import group1 from "../assets/Group 1.png";
+import group1 from "../assets/group1.png";
 
 import sales1 from "../assets/sales1.png";
 import sales2 from "../assets/sales2.png";

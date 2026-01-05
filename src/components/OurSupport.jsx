@@ -47,7 +47,7 @@ function OurSupport() {
 
       {/* ===== BUTTON CENTER ===== */}
       <div className="flex justify-center mt-6">
-        <button className="bg-[#B3FC6A] text-black px-6 py-4 rounded-xl font-medium hover:bg-green-500 transition">
+        <button className="bg-[#B3FC6A] text-black px-6 py-4 rounded-xl font-medium">
           Lets Integrate your CRM Now!
         </button>
       </div>

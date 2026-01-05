@@ -1,10 +1,10 @@
 import React from "react";
-import heroBg from "../assets/HeroImage.png";
+import heroBg from "../assets/heroimage.png";
 import roket from "../assets/rocket.png";
 import line1 from "../assets/line1.png";
 import groups from "../assets/groups.png";
-import salesforce from "../assets/Salesforce.png";
-import vectorp from "../assets/VectorP.png";
+import salesforce from "../assets/salesforce.png";
+import vectorp from "../assets/vectorp.png";
 import { Star } from "lucide-react";
 import chrome1 from "../assets/chrome1.png";
 import playstore from "../assets/playstore.png";

@@ -1,16 +1,16 @@
 import React from "react";
-import group2 from "../assets/Group2.png";
-import group3 from "../assets/Group3.png";
-import group4 from "../assets/Group4.png";
-import group5 from "../assets/Group 5.png";
+import group2 from "../assets/group2.png";
+import group3 from "../assets/group3.png";
+import group4 from "../assets/group4.png";
+import group5 from "../assets/group5.png";
 
 import one from "../assets/1.png";
 import two from "../assets/2.png";
 import three from "../assets/3.png";
 import four from "../assets/4.png";
-import threeCombo from "../assets/threCombo.png";
+import threeCombo from "../assets/threcombo.png";
 import { HiArrowRight } from "react-icons/hi";
-import ball from "../assets/Ball.png";
+import ball from "../assets/ball.png";
 
 function HowItWorks() {
   return (

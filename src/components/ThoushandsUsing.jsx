@@ -1,7 +1,5 @@
 import React from "react";
-import topRightImg from "../assets/message2.png"; // right-end top image
-import bannerImg from "../assets/thoushands.png"; // banner image
-import { FaArrowRightLong } from "react-icons/fa6";
+import bannerImg from "../assets/thoushands.png"; 
 import { HiArrowRight } from "react-icons/hi";
 
 function ThoushandsUsing() {

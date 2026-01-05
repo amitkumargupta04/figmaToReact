@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 import logo from "../assets/logo.png";
-import avaliableinChrome from "../assets/AvailableInChrome.png";
+import avaliableinChrome from "../assets/availableInchrome.png";
 
 function Footer() {
   return (
