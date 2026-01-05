@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 import logo from "../assets/logo.png";
-import avaliableinChrome from "../assets/availableInchrome.png";
+import allinchrome from "../assets/allinchrome.png";
 
 function Footer() {
   return (
@@ -123,7 +123,7 @@ function Footer() {
 
             {/* ✅ Image fixed at bottom-right INSIDE div */}
             <img
-              src={avaliableinChrome}
+              src={allinchrome}
               alt="chrome"
               className="
       absolute
