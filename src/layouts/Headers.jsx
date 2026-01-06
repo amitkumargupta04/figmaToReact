@@ -11,12 +11,12 @@ function Headers() {
     <header className="w-full bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-2">
         {/* HEADER ROW */}
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 flex-nowrap overflow-hidden">
           {/* LOGO */}
-          <img src={logo} alt="Logo" className="h-16" />
+          <img src={logo} alt="Logo" className="h-10 md:h-16" />
 
           {/* DESKTOP NAV */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8 min-w-0">
             {/* PRODUCT */}
             <div className="relative group">
               <div className="flex items-center gap-1 font-semibold cursor-pointer">
@@ -76,12 +76,12 @@ function Headers() {
           </nav>
 
           {/* DESKTOP BUTTONS */}
-          <div className="hidden md:flex gap-3">
-            <button className="bg-[#2D96BC] text-white px-5 py-2 rounded-md">
+          <div className="hidden lg:flex gap-3 flex-none">
+            <button className="bg-[#2D96BC] text-white px-5 py-2 rounded-md whitespace-nowrap">
               Get Your Free Account
             </button>
 
-            <button className="flex items-center gap-2 border border-[#2D96BC] text-[#2D96BC] px-4 py-2 rounded-md">
+            <button className="flex items-center gap-2 border border-[#2D96BC] text-[#2D96BC] px-4 py-2 rounded-md whitespace-nowrap">
               <FaArrowRightToBracket />
               Login
             </button>
@@ -89,7 +89,7 @@ function Headers() {
 
           {/* MOBILE MENU ICON */}
           <button
-            className="md:hidden text-2xl"
+            className="lg:hidden text-2xl"
             onClick={() => setOpenMenu(!openMenu)}
           >
             {openMenu ? <HiX /> : <HiMenu />}
@@ -98,7 +98,7 @@ function Headers() {
 
         {/* MOBILE MENU */}
         {openMenu && (
-          <div className="md:hidden mt-3 bg-white shadow-md rounded-md p-4 space-y-3">
+          <div className="lg:hidden mt-3 bg-white shadow-md rounded-md p-4 space-y-3">
             <p className="font-medium">Product</p>
             <p className="font-medium">Pricing</p>
             <p className="font-medium">Resources</p>

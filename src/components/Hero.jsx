@@ -13,14 +13,14 @@ import playstore1 from "../assets/playstore1.png";
 function Hero() {
   return (
     <section
-      className="min-h-screen bg-cover bg-center"
+      className="sm:min-h-screen bg-cover bg-center py-2 md:py-4 lg:py-8"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Container wrapper for max width + horizontal padding */}
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
 
         {/* 1️⃣ Rocket Badge */}
-        <div className="flex items-center justify-center gap-2 mt-12 px-3 py-2 
+        <div className="flex items-center justify-center gap-2 mt-4 px-3 py-2 
                         rounded-[20px] bg-white border border-[#9ACCFF] text-center">
           <img src={roket} alt="Rocket Icon" />
           <p className="text-[#63657E]">
@@ -107,7 +107,7 @@ function Hero() {
         </div>
 
         {/* 6️⃣ CTA Cards */}
-        <div className="flex flex-col sm:flex-row items-stretch justify-center gap-3 w-full py-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-3 w-full py-4 md:py-6 lg:py-10">
           
           {/* Left Card */}
           <div
