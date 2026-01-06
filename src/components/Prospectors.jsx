@@ -64,7 +64,7 @@ function Prospectors() {
         <div
           className="
             bg-[#FFF7F8] rounded-xl shadow-md
-            p-4 md:p-6 w-full md:max-w-md
+            p-2 md:p-6 w-full md:max-w-md
             border border-transparent
             transition-all duration-300
             hover:border-red-400 hover:-translate-y-2
@@ -177,7 +177,6 @@ function Prospectors() {
           <div className="bg-[#B3FC6A] text-[#000000] px-6 py-4 rounded-xl text-sm font-medium">
             Start Using LeadCRM Now
           </div>
-
           {/* Box 2 – IMAGE ONLY */}
           <img
             src={prosimg}
